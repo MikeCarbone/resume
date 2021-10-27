@@ -1,0 +1,153 @@
+:root {
+  --vert-space: 5px;
+  --color-secondary: gray;
+}
+
+* {
+  border: none;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.paper {
+  border: 1px solid black;
+  max-width: 900px;
+  min-height: 600px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.copy {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.top {
+  border-bottom: 1px solid black;
+  padding: 0 0 var(--vert-space) 0;
+}
+
+.top__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--vert-space) 0;
+}
+
+.top__link-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--vert-space) 0;
+}
+
+.top__link {
+  color: var(--color-secondary);
+  font-weight: 300;
+  text-align: right;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.top__link-svg {
+  fill: var(--color-secondary);
+  height: 15px;
+  margin: 0 5px 0 0;
+  stroke-width: 0px;
+  width: 15px;
+}
+
+.name {
+  font-size: 36px;
+  margin: 0 0 var(--vert-space) 0;
+}
+
+.subheading {
+  font-size: 16px;
+}
+
+.section {
+  margin: calc(var(--vert-space) * 2) 0;
+}
+
+.section-title {
+  font-size: 28px;
+  margin: var(--vert-space) 0;
+}
+
+.side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.skill {
+  padding: 0 5px;
+}
+
+.work {
+  margin: 10px 0 15px 0;
+  padding: 0 25px;
+}
+
+.work__title-section {
+  display: flex;
+  align-items: baseline;
+  margin: 5px 0;
+}
+
+.work__title-date {
+  font-size: 14px;
+  color: var(--color-secondary);
+  font-weight: 300;
+  padding: 0 0 0px 15px;
+}
+
+.work__link {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 0 0 0px 15px;
+  text-decoration: none;
+}
+
+.work__items {
+  padding: 0 0 0 20px;
+}
+
+.work__item {
+  list-style-type: '- ';
+  margin: 2px 0;
+}
+
+@media print {
+  .paper {
+    border: none;
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+
+/* Letter styles */
+
+.letter-container {
+  padding: 100px 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.space-below {
+  margin: 0 0 30px 0;
+}
+
+.indent {
+  text-indent: 25px;
+}
+
+.letter-text {
+  font-size: 12px;
+}
