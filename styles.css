@@ -69,7 +69,7 @@
 }
 
 .name {
-	font-size: 36px;
+	font-size: 30px;
 	margin: 0 0 var(--vert-space) 0;
 }
 
@@ -78,11 +78,11 @@
 }
 
 .section {
-	margin: calc(var(--vert-space) * 2) 0;
+	margin: var(--vert-space) 0;
 }
 
 .section-title {
-	font-size: 28px;
+	font-size: 14px;
 	margin: var(--vert-space) 0;
 }
 
@@ -101,14 +101,18 @@
 }
 
 .work {
-	margin: 10px 0 15px 0;
-	padding: 0 5px;
+	margin: 0px 0 8px 0;
+	/* padding: 0 5px; */
 }
 
 .work__title-section {
 	display: flex;
 	align-items: baseline;
 	margin: 5px 0;
+}
+
+.work__title {
+	font-size: 14px;
 }
 
 .work__title-date {
@@ -162,4 +166,38 @@
 
 .letter-text {
 	font-size: 13px;
+}
+
+.letter-h2 {
+	font-size: 18px;
+	margin: 32px 0 12px 0;
+}
+
+.references {
+	padding: 20px;
+}
+
+.references h1 {
+	margin-bottom: 0;
+	margin-top: 8px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.references blockquote {
+	page-break-after: avoid;
+	margin: 48px 0 0 0;
+}
+
+.references p {
+	color: #343434;
+	font-size: 13px;
+	margin: 16px 0;
+	line-height: 1.6;
+}
+
+.references blockquote footer {
+	font-size: 14px;
+	margin-top: 16px;
+	font-style: italic;
 }
